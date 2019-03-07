@@ -1,0 +1,40 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ps="http://primefaces.org/sentinel"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+
+	
+
+		<h:form id="menuform">
+							
+								<p:menubar toggleable="true">
+								
+									<p:submenu label="Master" icon="ui-icon-pencil">  
+							            
+							            	 								                    <p:menuitem value="Master Persona" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/persona.xhtml" />  
+											 								                    <p:menuitem value="Master Usuario" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/usuario.xhtml" />  
+											 								                    <p:menuitem value="Master TipoUsuario" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/tipoUsuario.xhtml" />  
+											 								                    <p:menuitem value="Master Departamento" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/departamento.xhtml" />  
+											 								                    <p:menuitem value="Master TipoIdentificacion" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/tipoIdentificacion.xhtml" />  
+											 							        </p:submenu>  
+															
+															
+							  
+							        <p:submenu label="Data Table" icon="ui-icon-document">
+							                								                    <p:menuitem value="Persona" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/personaListDataTable.xhtml" />  
+											 								                    <p:menuitem value="Usuario" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/usuarioListDataTable.xhtml" />  
+											 								                    <p:menuitem value="TipoUsuario" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/tipoUsuarioListDataTable.xhtml" />  
+											 								                    <p:menuitem value="Departamento" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/departamentoListDataTable.xhtml" />  
+											 								                    <p:menuitem value="TipoIdentificacion" url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/XHTML/tipoIdentificacionListDataTable.xhtml" />  
+											 							        </p:submenu>  
+							  
+						        	<p:menuitem value="Logout"
+										url="#{facesContext.externalContext.request.scheme}://#{facesContext.externalContext.request.serverName}:#{facesContext.externalContext.request.serverPort}#{facesContext.externalContext.request.contextPath}/j_spring_security_logout"
+										icon="ui-icon-close" />  
+						    
+			</p:menubar>
+		</h:form>
+</ui:composition>
